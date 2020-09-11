@@ -4,6 +4,7 @@ int main() {
 	int check = 1;
 	char str[50];
 	char* p, * t;
+	printf("Enter string to check palindrome or not ? : ");
 	scanf("%s", &str);
 	p = str;
 	t = str;
@@ -29,9 +30,11 @@ int main() {
 		p--;
 		t++;
 	}
+	printf("\n***************");
 	if (check == 0)
 		printf("\nNot Palindrome");
 	else
 		printf("\nPalindrome");
+	printf("\n***************");
 	return 0;
 }
