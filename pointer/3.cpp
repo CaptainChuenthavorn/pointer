@@ -2,8 +2,11 @@
 #include <stdio.h>
 int main() {
 	char str[50], * p;
+	printf("Program that printf only letter and change lower to capital or change capital to lower \n");
+	printf("Enter string  : ");
 	scanf("%[^\n]s", str);
 	p = str;
+	printf("\n\nThe result is : ");
 	while (*p != '\0')
 	{
 
