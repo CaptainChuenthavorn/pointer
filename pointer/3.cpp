@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main() {
 	char str[50], * p;
@@ -27,4 +27,4 @@ int main() {
 	}
 
 	return 0;
-}
+}*/

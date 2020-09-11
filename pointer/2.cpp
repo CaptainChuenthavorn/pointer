@@ -1,4 +1,4 @@
-/*define _CRT_SECURE_NO_WARNINGS
+define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main() {
 	char str1[50], str2[50],*p1,*p2,check=0;
@@ -9,11 +9,11 @@ int main() {
 	while (*p1 != '\0' || *p2 != '\0') {
 		printf("\nbefore  p1= %c ", *p1);
 		printf("\nin loop 1..");
-		if (*p1 == (*p1++)) { 
+		if (*p1 == *(p1+1)) { 
 			printf("\nif  p1= %c ", *p1);
 			printf("\nin loop 2..5555");
 			
-			while (*p1 != *p1++) {
+			while (*p1 != *(p1+1)) {
 				printf("\nin loop 2..");
 				printf("\np1= %c ", *p1);
 				p1++;
@@ -21,8 +21,8 @@ int main() {
 			
 		}
 		printf("\nafter  : p1= %c ", *p1);
-		if (*p2 == *p2 + 1) {
-			while (*p2 != *p2 + 1) {
+		if (*p2 == *(p2 + 1)) {
+			while (*p2 != *(p2 + 1)) {
 				printf("\nin loop 3..");
 				printf("\np2= %c ", *p2);
 				p2++;
@@ -47,4 +47,4 @@ int main() {
 	else
 		printf("\nnot equal");
 	return 0;
-}*/
+}
