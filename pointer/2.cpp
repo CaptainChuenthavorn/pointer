@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main() {
 	char str1[50], str2[50],*p1,*p2,check=0;
@@ -47,4 +47,4 @@ int main() {
 	else
 		printf("\nnot equal");
 	return 0;
-}
+}*/
