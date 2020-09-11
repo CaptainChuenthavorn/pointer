@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-char checkPalin(char, char, char);
+char checkPalin(char , char, char, char);
 int main() {
 	int check = 1;
 	char str[50] ;
@@ -14,7 +14,15 @@ int main() {
 	}
 	p--;
 	printf("t= %c\np= %c\n", *t, *p);
-	while (p >= str) {
+	checkPalin(str[0],*p,*t,check);
+	if (check == 0)
+		printf("\nNot Palindrome");
+	else
+		printf("\nPalindrome");
+	return 0;
+}
+char checkPalin(char str,char &p, char *t, char check) {
+	while (*p >= str) {
 		if (*p == *t) {
 			printf("%c", *p);
 		}
@@ -25,12 +33,5 @@ int main() {
 		p--;
 		t++;
 	}
-	if (check == 0)
-		printf("\nNot Palindrome");
-	else
-		printf("\nPalindrome");
-	return 0;
-}
-char checkPalin(char p, char t, char check) {
-
+	return check;
 }
